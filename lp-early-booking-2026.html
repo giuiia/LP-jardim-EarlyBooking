@@ -931,43 +931,22 @@
         <p class="form-sub">Preencha seus dados e ganhe 15% de desconto</p>
 
         <!-- Formulário RD Station — Early Booking -->
-        <form id="conversion-form" novalidate="novalidate"
-              action="https://cta-redirect.rdstation.com/v2/conversions"
-              data-typed-fields="1" data-lang="pt-BR"
-              data-asset-action="aHR0cDovL2phcmRpbW1vbnRldmVyZGUuY29tLmJy"
-              data-ga-ua-id="" data-recaptcha-public-token="">
-
-          <input type="hidden" name="token_rdstation" value="d896ee74f661eb727969da5bc022da28">
-          <input type="hidden" name="conversion_identifier" value="early-booking-d249b95c6b08f7efa3f7">
-          <input type="hidden" name="internal_source" value="2">
-          <input type="hidden" name="_rd_experiment_content_id" value="">
-          <input type="hidden" name="_rd_dynamic_content_id" value="">
-          <input type="hidden" name="c_utmz" value="">
-          <input type="hidden" name="traffic_source" value="">
-          <input type="hidden" name="privacy_data[browser]" id="privacy_data_browser">
+        <form id="conversion-form">
 
           <div class="form-group">
-            <label for="rd-text_field-mr24yr3s">Nome completo *</label>
-            <input type="text" id="rd-text_field-mr24yr3s" name="name" placeholder="Seu nome" required />
+            <label for="f-nome">Nome completo *</label>
+            <input type="text" id="f-nome" name="name" placeholder="Seu nome" required />
           </div>
           <div class="form-group">
-            <label for="rd-email_field-mr24yr3t">E-mail *</label>
-            <input type="email" id="rd-email_field-mr24yr3t" name="email" placeholder="seu@email.com" required />
+            <label for="f-email">E-mail *</label>
+            <input type="email" id="f-email" name="email" placeholder="seu@email.com" required />
           </div>
           <div class="form-group">
-            <label for="rd-phone_field-mr24yr3u">Telefone / WhatsApp *</label>
-            <input type="tel" id="rd-phone_field-mr24yr3u" name="personal_phone" placeholder="(11) 99999-9999" required />
-          </div>
-          <div class="form-group">
-            <label for="captcha">Verificação de segurança *</label>
-            <input type="text" id="captcha" name="captcha" placeholder="Carregando..." required />
+            <label for="f-telefone">Telefone / WhatsApp *</label>
+            <input type="tel" id="f-telefone" name="personal_phone" placeholder="(11) 99999-9999" required />
           </div>
 
-          <!-- Anti-spam honeypot -->
-          <input type="text" name="emP7yF13ld" style="display:none">
-          <input type="text" name="sh0uldN07ch4ng3" style="display:none">
-
-          <button type="submit" class="btn btn-ambar form-submit">
+          <button type="submit" class="btn btn-ambar form-submit" id="form-btn">
             RESGATAR MEU CUPOM
           </button>
         </form>
@@ -1473,16 +1452,40 @@
 
 </script>
 
-<!-- RD Station: scripts do formulário -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://d335luupugsy2.cloudfront.net/js/jquery.validate/1.9/jquery.validate.min.js"></script>
-<script src="https://d335luupugsy2.cloudfront.net/js/lead-tracking/stable/plugins/jquery.cookie.v1.4.1.min.js"></script>
-<script src="https://d335luupugsy2.cloudfront.net/js/lead-tracking/stable/plugins/math.uuid.v1.4.min.js"></script>
-<script src="https://d335luupugsy2.cloudfront.net/js/rd/stable/rdlps.min.js"></script>
-<script src="https://d335luupugsy2.cloudfront.net/js/rd/stable/rdlps-progressive-profiling.min.js"></script>
-<script src="https://d335luupugsy2.cloudfront.net/js/rd/stable/rdlps-autofill.min.js"></script>
-<script src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/ca3cd233-6057-4cd4-8276-9777323faaab-loader.js"></script>
-<script src="https://d335luupugsy2.cloudfront.net/js/traffic-source-cookie/stable/traffic-source-cookie.min.js"></script>
+<!-- RD Station: submissão via fetch (compatível com domínio externo) -->
+<script>
+  document.getElementById('conversion-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const btn = document.getElementById('form-btn');
+    const name  = document.getElementById('f-nome').value.trim();
+    const email = document.getElementById('f-email').value.trim();
+    const phone = document.getElementById('f-telefone').value.trim();
+
+    if (!name || !email || !phone) return;
+
+    btn.disabled = true;
+    btn.textContent = 'Enviando...';
+
+    const params = new URLSearchParams();
+    params.append('token_rdstation', 'd896ee74f661eb727969da5bc022da28');
+    params.append('conversion_identifier', 'early-booking-d249b95c6b08f7efa3f7');
+    params.append('internal_source', '2');
+    params.append('nome', name);
+    params.append('email', email);
+    params.append('personal_phone', phone);
+
+    fetch('https://cta-redirect.rdstation.com/v2/conversions', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: params.toString(),
+      mode: 'no-cors'
+    })
+    .finally(function() {
+      window.location.href = 'obrigado.html';
+    });
+  });
+</script>
 
 </body>
 </html>
