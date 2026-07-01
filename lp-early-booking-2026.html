@@ -283,16 +283,6 @@
       margin-top: 12px;
     }
 
-    /*
-      ⚠️ FORMULÁRIO RD STATION
-      Descomente e cole o embed do RD Station abaixo,
-      substituindo o <form> acima quando integrar:
-
-      <div id="rd-form-placeholder">
-        <!-- Cole aqui o código embed do formulário RD Station -->
-      </div>
-    */
-
     /* ══════════════════════════════════════════
        SEÇÃO 2 — SOBRE A POUSADA
     ══════════════════════════════════════════ */
@@ -940,26 +930,46 @@
         <h3>Quer resgatar seu cupom?</h3>
         <p class="form-sub">Preencha seus dados e ganhe 15% de desconto</p>
 
-        <!--
-          ⚠️ SUBSTITUA ESTE FORMULÁRIO pelo embed do RD Station.
-          O código abaixo é apenas o layout de referência.
-        -->
-        <form id="form-early" onsubmit="handleForm(event)">
+        <!-- Formulário RD Station — Early Booking -->
+        <form id="conversion-form" novalidate="novalidate"
+              action="https://cta-redirect.rdstation.com/v2/conversions"
+              data-typed-fields="1" data-lang="pt-BR"
+              data-asset-action="aHR0cDovL2phcmRpbW1vbnRldmVyZGUuY29tLmJy"
+              data-ga-ua-id="" data-recaptcha-public-token="">
+
+          <input type="hidden" name="token_rdstation" value="d896ee74f661eb727969da5bc022da28">
+          <input type="hidden" name="conversion_identifier" value="early-booking-d249b95c6b08f7efa3f7">
+          <input type="hidden" name="internal_source" value="2">
+          <input type="hidden" name="_rd_experiment_content_id" value="">
+          <input type="hidden" name="_rd_dynamic_content_id" value="">
+          <input type="hidden" name="c_utmz" value="">
+          <input type="hidden" name="traffic_source" value="">
+          <input type="hidden" name="privacy_data[browser]" id="privacy_data_browser">
+
           <div class="form-group">
-            <label for="nome">Nome completo *</label>
-            <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+            <label for="rd-text_field-mr24yr3s">Nome completo *</label>
+            <input type="text" id="rd-text_field-mr24yr3s" name="name" placeholder="Seu nome" required />
           </div>
           <div class="form-group">
-            <label for="email">E-mail *</label>
-            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+            <label for="rd-email_field-mr24yr3t">E-mail *</label>
+            <input type="email" id="rd-email_field-mr24yr3t" name="email" placeholder="seu@email.com" required />
           </div>
           <div class="form-group">
-            <label for="telefone">Telefone / WhatsApp *</label>
-            <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required />
+            <label for="rd-phone_field-mr24yr3u">Telefone / WhatsApp *</label>
+            <input type="tel" id="rd-phone_field-mr24yr3u" name="personal_phone" placeholder="(11) 99999-9999" required />
           </div>
-          <!-- Captcha RD Station será adicionado automaticamente pelo embed -->
+          <div class="form-group">
+            <label for="captcha">Verificação de segurança *</label>
+            <input type="text" id="captcha" name="captcha" placeholder="Carregando..." required />
+          </div>
+
+          <!-- Anti-spam honeypot -->
+          <input type="text" name="emP7yF13ld" style="display:none">
+          <input type="text" name="sh0uldN07ch4ng3" style="display:none">
+
           <button type="submit" class="btn btn-ambar form-submit">
-            RESGATAR MEU CUPOM          </button>
+            RESGATAR MEU CUPOM
+          </button>
         </form>
         <p class="form-privacy">Seus dados estão seguros. Não enviamos spam.</p>
       </div>
@@ -1461,14 +1471,18 @@
     if (!isOpen) item.classList.add('open');
   }
 
-  /* ── Formulário (placeholder) ── */
-  function handleForm(e) {
-    e.preventDefault();
-    // ⚠️ Remova esta função quando integrar o formulário real do RD Station.
-    // O RD Station gerencia a submissão automaticamente via embed.
-    alert('Formulário de desenvolvimento. Integre com o embed do RD Station antes de publicar.');
-  }
 </script>
+
+<!-- RD Station: scripts do formulário -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://d335luupugsy2.cloudfront.net/js/jquery.validate/1.9/jquery.validate.min.js"></script>
+<script src="https://d335luupugsy2.cloudfront.net/js/lead-tracking/stable/plugins/jquery.cookie.v1.4.1.min.js"></script>
+<script src="https://d335luupugsy2.cloudfront.net/js/lead-tracking/stable/plugins/math.uuid.v1.4.min.js"></script>
+<script src="https://d335luupugsy2.cloudfront.net/js/rd/stable/rdlps.min.js"></script>
+<script src="https://d335luupugsy2.cloudfront.net/js/rd/stable/rdlps-progressive-profiling.min.js"></script>
+<script src="https://d335luupugsy2.cloudfront.net/js/rd/stable/rdlps-autofill.min.js"></script>
+<script src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/ca3cd233-6057-4cd4-8276-9777323faaab-loader.js"></script>
+<script src="https://d335luupugsy2.cloudfront.net/js/traffic-source-cookie/stable/traffic-source-cookie.min.js"></script>
 
 </body>
 </html>
