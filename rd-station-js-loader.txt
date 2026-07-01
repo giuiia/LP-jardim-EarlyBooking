@@ -1,0 +1,2 @@
+/* Cole este código no editor de JavaScript do RD Station LP */
+(function(){var s=document.createElement('script');s.src='https://giuiia.github.io/LP-jardim-EarlyBooking/lp-inject.js?v='+Date.now();document.head.appendChild(s);})();
