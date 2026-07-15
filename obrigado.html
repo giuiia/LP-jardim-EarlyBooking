@@ -81,11 +81,41 @@
       margin-bottom: 40px;
     }
 
+    .coupon-box {
+      border: 2px dashed var(--ambar);
+      border-radius: 12px;
+      padding: 20px 32px;
+      margin-bottom: 32px;
+      max-width: 360px;
+      width: 100%;
+    }
+
+    .coupon-label {
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 8px;
+    }
+
+    .coupon-code {
+      font-family: 'Bethia', serif;
+      font-size: clamp(28px, 7vw, 42px);
+      color: var(--ambar);
+      letter-spacing: 0.05em;
+    }
+
+    .coupon-desc {
+      font-size: 13px;
+      color: rgba(255,255,255,0.6);
+      margin-top: 6px;
+    }
+
     .cta-btn {
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      background: #25D366;
+      background: var(--ambar);
       color: #fff;
       text-decoration: none;
       font-family: 'Raleway', sans-serif;
@@ -93,15 +123,30 @@
       font-weight: 700;
       letter-spacing: 0.06em;
       text-transform: uppercase;
-      padding: 16px 32px;
+      padding: 18px 36px;
       border-radius: 8px;
-      margin-bottom: 24px;
+      margin-bottom: 16px;
       transition: background 0.2s;
     }
 
-    .cta-btn:hover { background: #1ebe5a; }
+    .cta-btn:hover { background: #c07a3a; }
 
-    .cta-btn svg { width: 22px; height: 22px; fill: white; flex-shrink: 0; }
+    .cta-btn svg { width: 20px; height: 20px; fill: white; flex-shrink: 0; }
+
+    .whatsapp-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      margin-bottom: 24px;
+      transition: color 0.2s;
+    }
+
+    .whatsapp-link:hover { color: rgba(255,255,255,0.8); }
+
+    .whatsapp-link svg { width: 16px; height: 16px; fill: currentColor; }
 
     .back-link {
       font-size: 13px;
@@ -141,27 +186,34 @@
   <h1>Interesse registrado!</h1>
 
   <p class="subtitle">
-    Obrigada pelo interesse. Em breve entraremos em contato<br>
-    para garantir sua reserva com condições especiais de Early Booking.
+    Use o cupom abaixo para garantir<br><strong>15% de desconto</strong> na sua reserva.
   </p>
 
+  <div class="coupon-box">
+    <p class="coupon-label">Seu cupom de desconto</p>
+    <p class="coupon-code">DESCONTO15</p>
+    <p class="coupon-desc">Aplicado automaticamente ao clicar no botão</p>
+  </div>
+
   <a class="cta-btn"
+     href="https://hbook.hsystem.com.br/Booking?companyId=62da06aa6959216cb6cf92dc&promocode=DESCONTO15"
+     target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/>
+    </svg>
+    Reservar com 15% de desconto
+  </a>
+
+  <a class="whatsapp-link"
      href="https://api.whatsapp.com/send?phone=553534381350&text=Ol%C3%A1%21+Tenho+interesse+em+reservar+na+Pousada+Jardim+Monte+Verde+%F0%9F%8C%BF&utm_source=lp_early_booking&utm_medium=obrigado&utm_campaign=early_booking_2026"
      target="_blank" rel="noopener">
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
       <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.524 5.843L.057 23.743a.5.5 0 0 0 .63.612l6.094-1.596A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.875 9.875 0 0 1-5.032-1.374l-.36-.214-3.733.978.996-3.636-.235-.374A9.868 9.868 0 0 1 2.106 12C2.106 6.533 6.533 2.106 12 2.106S21.894 6.533 21.894 12 17.467 21.894 12 21.894z"/>
     </svg>
-    Falar com a pousada
+    Falar pelo WhatsApp
   </a>
 
-  <div class="divider"></div>
-
-  <p class="note">
-    Para dúvidas, entre em contato pelo WhatsApp ou Instagram <strong>@pousadajardimmv</strong>.
-  </p>
-
-  <br>
   <a href="https://giuiia.github.io/LP-jardim-EarlyBooking/lp-early-booking-2026.html" class="back-link">← Voltar para a oferta</a>
 
 </body>
