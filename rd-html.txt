@@ -1,0 +1,610 @@
+<div id="jmv-lp">
+<!-- ══════════════════════════════════════════
+     CABEÇALHO
+══════════════════════════════════════════ -->
+<header id="cabecalho">
+  <a href="#hero">
+    <img src="https://giuiia.github.io/LP-jardim-EarlyBooking/jardim_logo.png" alt="Pousada Jardim Monte Verde" class="header-logo" />
+  </a>
+</header>
+
+<!-- ══════════════════════════════════════════
+     SEÇÃO 1 — HERO
+══════════════════════════════════════════ -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+
+      <!-- Coluna Esquerda: Copy -->
+      <div class="hero-copy">
+        <img src="https://giuiia.github.io/LP-jardim-EarlyBooking/Logokv.png" alt="Early Booking 2026" class="kv-early" />
+
+        <h1>
+          Monte Verde do jeito que você sempre quis.<br/>
+          <span>Com 15% de desconto.</span>
+        </h1>
+
+        <p>Garanta sua reserva de agosto a novembro com antecedência e economize. Oferta válida para estadias de ago a nov/2026, exceto feriados. Mínimo 2 diárias.</p>
+
+        <div class="countdown-wrap">
+          <p class="countdown-label">Esta oferta encerra em: 30/09</p>
+          <div class="countdown" id="countdown-hero">
+            <div class="countdown-item">
+              <span class="number" id="h-dias">--</span>
+              <span class="unit">Dias</span>
+            </div>
+            <div class="countdown-item">
+              <span class="number" id="h-horas">--</span>
+              <span class="unit">Horas</span>
+            </div>
+            <div class="countdown-item">
+              <span class="number" id="h-min">--</span>
+              <span class="unit">Min</span>
+            </div>
+            <div class="countdown-item">
+              <span class="number" id="h-seg">--</span>
+              <span class="unit">Seg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coluna Direita: Formulário -->
+      <div class="hero-form-card">
+        <h3>Quer resgatar seu cupom?</h3>
+        <p class="form-sub">Preencha seus dados e ganhe 15% de desconto</p>
+
+        <!-- Formulário RD Station -->
+        <form id="conversion-form" novalidate="novalidate"
+              action="https://cta-redirect.rdstation.com/v2/conversions"
+              data-typed-fields="1" data-lang="pt-BR"
+              data-asset-action="aHR0cHM6Ly9naXVpaWEuZ2l0aHViLmlvL0xQLWphcmRpbS1FYXJseUJvb2tpbmcvb2JyaWdhZG8uaHRtbA=="
+              data-ga-ua-id="" data-recaptcha-public-token="">
+
+          <input type="hidden" name="token_rdstation" value="d896ee74f661eb727969da5bc022da28">
+          <input type="hidden" name="conversion_identifier" value="early-booking-d249b95c6b08f7efa3f7">
+          <input type="hidden" name="internal_source" value="2">
+          <input type="hidden" name="_rd_experiment_content_id" value="">
+          <input type="hidden" name="_rd_dynamic_content_id" value="">
+          <input type="hidden" name="c_utmz" value="">
+          <input type="hidden" name="traffic_source" value="">
+          <input type="hidden" name="privacy_data[browser]" id="privacy_data_browser">
+
+          <div class="form-group">
+            <label for="rd-text_field-mr24yr3s">Nome completo *</label>
+            <input type="text" id="rd-text_field-mr24yr3s" name="name" placeholder="Seu nome" required />
+          </div>
+          <div class="form-group">
+            <label for="rd-email_field-mr24yr3t">E-mail *</label>
+            <input type="email" id="rd-email_field-mr24yr3t" name="email" placeholder="seu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="rd-phone_field-mr24yr3u">Telefone / WhatsApp *</label>
+            <input type="tel" id="rd-phone_field-mr24yr3u" name="personal_phone" placeholder="(11) 99999-9999" required />
+          </div>
+
+          <button type="submit" class="btn btn-ambar form-submit">RESGATAR MEU CUPOM</button>
+        </form>
+        <p class="form-privacy">Seus dados estão seguros. Não enviamos spam.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SEÇÃO 2 — DIFERENCIAIS DA POUSADA
+══════════════════════════════════════════ -->
+<section id="diferenciais">
+  <div class="container">
+    <div class="diferenciais-inner">
+
+      <!-- Coluna esquerda: texto + ícones -->
+      <div class="diferenciais-left">
+        <h2>Uma experiência completa na Serra da Mantiqueira</h2>
+        <p class="diferenciais-desc">
+          Localizada na Rua do Paiol, a 1km do centro de Monte Verde, a Pousada Jardim oferece chalés privativos, área verde, café da manhã especial e tudo o que você precisa para descansar de verdade — sem abrir mão do conforto.
+        </p>
+
+        <div class="diferenciais-grid">
+
+          <div class="diferencial-item">
+            <div class="icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 8h1a4 4 0 0 1 0 8h-1"/>
+                <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z"/>
+                <line x1="6" y1="2" x2="6" y2="4"/>
+                <line x1="10" y1="2" x2="10" y2="4"/>
+                <line x1="14" y1="2" x2="14" y2="4"/>
+              </svg>
+            </div>
+            <span>Café da manhã incluso</span>
+          </div>
+
+          <div class="diferencial-item">
+            <div class="icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2c0 0-5 4.5-5 9a5 5 0 0 0 10 0c0-4.5-5-9-5-9z"/>
+                <path d="M12 12 L12 15"/>
+              </svg>
+            </div>
+            <span>Lareira nos quartos</span>
+          </div>
+
+          <div class="diferencial-item">
+            <div class="icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22V12"/>
+                <path d="M5 12C5 8 8 5 12 5s7 3 7 7"/>
+                <path d="M12 5C9 5 7 8 7 12"/>
+                <path d="M12 5c3 0 5 3 5 7"/>
+                <circle cx="12" cy="12" r="1"/>
+              </svg>
+            </div>
+            <span>Área verde e natureza</span>
+          </div>
+
+          <div class="diferencial-item">
+            <div class="icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 12c0-3 3-6 6-6s5 2 5 5-3 6-6 6H3z"/>
+                <path d="M14 11c1-1 3-1 4 0s1 3 0 4l-3 3"/>
+                <path d="M10 17l1 3"/>
+              </svg>
+            </div>
+            <span>Spa e wellness</span>
+          </div>
+
+          <div class="diferencial-item">
+            <div class="icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 12h20"/>
+                <path d="M2 12c0-3 4-5 10-5s10 2 10 5"/>
+                <path d="M2 12c0 3 4 5 10 5s10-2 10-5"/>
+                <ellipse cx="12" cy="12" rx="4" ry="5"/>
+              </svg>
+            </div>
+            <span>Piscina</span>
+          </div>
+
+          <div class="diferencial-item">
+            <div class="icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13" rx="2"/>
+                <path d="M16 8h4l3 3v5h-7V8z"/>
+                <circle cx="5.5" cy="18.5" r="2.5"/>
+                <circle cx="18.5" cy="18.5" r="2.5"/>
+              </svg>
+            </div>
+            <span>Estacionamento gratuito</span>
+          </div>
+
+          <div class="diferencial-item">
+            <div class="icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+                <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+                <circle cx="12" cy="20" r="1" fill="currentColor"/>
+              </svg>
+            </div>
+            <span>Wi-Fi incluído</span>
+          </div>
+
+        </div>
+
+        <a href="#hero" class="btn btn-verde">RESERVAR COM DESCONTO</a>
+      </div>
+
+      <!-- Coluna direita: mosaico de fotos -->
+      <div class="diferenciais-fotos">
+        <div class="foto-grande">
+          <img src="https://giuiia.github.io/LP-jardim-EarlyBooking/fotopiscina.jpg" alt="Piscina" />
+        </div>
+        <div class="foto">
+          <img src="https://giuiia.github.io/LP-jardim-EarlyBooking/Cafedamanha.jpg" alt="Café da manhã" />
+        </div>
+        <div class="foto">
+          <img src="https://giuiia.github.io/LP-jardim-EarlyBooking/spa.jpg" alt="Spa" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SEÇÃO 3 — CHALÉS
+══════════════════════════════════════════ -->
+<section id="chales">
+  <div class="container">
+    <div class="section-header">
+      <h2>Escolha seu refúgio</h2>
+      <p>Cada chalé foi pensado para proporcionar privacidade, conforto e uma conexão real com a natureza.</p>
+    </div>
+
+    <!-- Linha 1: 3 chalés -->
+    <div class="chales-grid">
+
+      <div class="chale-card">
+        <div class="chale-card-img">
+          <img src="https://giuiia.github.io/LP-jardim-EarlyBooking/MonetLuxo.jpg" alt="Chalé Monet Luxo" />
+        </div>
+        <div class="chale-card-body">
+          <h3>Monet Luxo</h3>
+          <p>Hidromassagem, varanda privativa e o máximo de conforto para uma experiência romântica inesquecível.</p>
+          <a href="#hero" class="btn btn-outline-ambar">Ver disponibilidade</a>
+        </div>
+      </div>
+
+      <div class="chale-card">
+        <div class="chale-card-img">
+          <img src="https://giuiia.github.io/LP-jardim-EarlyBooking/Monet.jpg" alt="Chalé Monet" />
+        </div>
+        <div class="chale-card-body">
+          <h3>Monet</h3>
+          <p>Espaço, varanda e romantismo em meio ao verde. Perfeito para casais que querem descansar de verdade.</p>
+          <a href="#hero" class="btn btn-outline-ambar">Ver disponibilidade</a>
+        </div>
+      </div>
+
+      <div class="chale-card">
+        <div class="chale-card-img">
+          <img src="https://giuiia.github.io/LP-jardim-EarlyBooking/Garden.jpg" alt="Chalé Garden 5" />
+        </div>
+        <div class="chale-card-body">
+          <h3>Garden 5</h3>
+          <p>Conforto e tranquilidade com vista para a natureza. Ótimo custo-benefício para aproveitar Monte Verde.</p>
+          <a href="#hero" class="btn btn-outline-ambar">Ver disponibilidade</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Linha 2: 3 chalés -->
+    <div class="chales-grid">
+
+      <div class="chale-card">
+        <div class="chale-card-img">
+          <img src="https://giuiia.github.io/LP-jardim-EarlyBooking/Garden.jpg" alt="Chalé Garden 6" />
+        </div>
+        <div class="chale-card-body">
+          <h3>Garden 6</h3>
+          <p>Lareira, varanda envidraçada e uma das vistas mais bonitas da pousada. Acorde cercado pela natureza.</p>
+          <a href="#hero" class="btn btn-outline-ambar">Ver disponibilidade</a>
+        </div>
+      </div>
+
+      <div class="chale-card">
+        <div class="chale-card-img">
+          <img src="https://giuiia.github.io/LP-jardim-EarlyBooking/Garden.jpg" alt="Chalé Garden 7" />
+        </div>
+        <div class="chale-card-body">
+          <h3>Garden 7</h3>
+          <p>Tranquilidade e natureza em cada amanhecer. Ideal para quem busca sossego sem abrir mão do conforto.</p>
+          <a href="#hero" class="btn btn-outline-ambar">Ver disponibilidade</a>
+        </div>
+      </div>
+
+      <div class="chale-card">
+        <div class="chale-card-img">
+          <img src="https://giuiia.github.io/LP-jardim-EarlyBooking/grandjardim.jpg" alt="Gran Jardim Family" />
+        </div>
+        <div class="chale-card-body">
+          <h3>Gran Jardim Family</h3>
+          <p>Dois quartos, espaço para a família inteira e todo o conforto da Pousada Jardim.</p>
+          <a href="#hero" class="btn btn-outline-ambar">Ver disponibilidade</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="chales-cta">
+      <a href="#hero" class="btn btn-ambar">RESGATAR MEU CUPOM DE 15% →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SEÇÃO 4 — PROVA SOCIAL
+══════════════════════════════════════════ -->
+<section id="prova-social">
+  <div class="container">
+
+    <div class="tripadvisor-badge">
+      <div class="rating-line">
+        <span class="stars">★★★★½</span>
+        <span>4,5 no TripAdvisor · 78 avaliações · <strong>#4 entre 32 pousadas em Monte Verde</strong></span>
+      </div>
+    </div>
+
+    <div class="depoimentos-grid">
+
+      <div class="depoimento-card">
+        <div class="depo-stars">★★★★★</div>
+        <blockquote>
+          "Uma experiência incrível! O quarto é exatamente como nas fotos — muito limpo, cama e roupa de cama confortáveis. Café da manhã muito charmoso e saboroso. Super bem localizado, 5 minutos do centro. Saímos querendo ficar mais."
+        </blockquote>
+        <div>
+          <p class="depo-autor">Talita F.</p>
+          <p class="depo-detalhe">Casal · Chalé Monet Luxo</p>
+        </div>
+      </div>
+
+      <div class="depoimento-card">
+        <div class="depo-stars">★★★★★</div>
+        <blockquote>
+          "A pousada é maravilhosa! Muito bonita e arborizada. O café da manhã é impecável — foi o melhor de todos os lugares onde já me hospedei! Os chalés são vários, um mais incrível que o outro. Super recomendo!"
+        </blockquote>
+        <div>
+          <p class="depo-autor">Williana J.</p>
+          <p class="depo-detalhe">Casal</p>
+        </div>
+      </div>
+
+      <div class="depoimento-card">
+        <div class="depo-stars">★★★★★</div>
+        <blockquote>
+          "Surpreendi minha esposa no aniversário dela e foi uma estadia excelente. O quarto é um charme! Café da manhã maravilhoso — destaque especial para as deliciosas pamonhas!"
+        </blockquote>
+        <div>
+          <p class="depo-autor">SyProch</p>
+          <p class="depo-detalhe">São Paulo · Casal</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SEÇÃO 5 — MONTE VERDE
+══════════════════════════════════════════ -->
+<section id="monte-verde">
+
+  <div class="mv-hero">
+    <div class="mv-hero-bg"></div>
+    <div class="mv-hero-content">
+      <h2>Monte Verde: o refúgio mais próximo de você</h2>
+      <p>Localizada na Serra da Mantiqueira, Monte Verde oferece clima de montanha, gastronomia de qualidade, trilhas, cachoeiras e um ritmo de vida que faz bem. A Pousada Jardim fica a apenas 1km do centro — tudo perto, sem abrir mão da tranquilidade.</p>
+    </div>
+  </div>
+
+  <div class="mv-highlights">
+
+    <div class="mv-highlight">
+      <div class="mv-icon">
+        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 4L4 16v22h10V26h12v12h10V16L20 4z"/>
+        </svg>
+      </div>
+      <h4>A 1km do centro</h4>
+      <p>Toda a comodidade da vila, com a tranquilidade da serra.</p>
+    </div>
+
+    <div class="mv-highlight">
+      <div class="mv-icon">
+        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 4c0 0-12 10-12 20a12 12 0 0 0 24 0C32 14 20 4 20 4z"/>
+        </svg>
+      </div>
+      <h4>Cachoeiras e trilhas</h4>
+      <p>Natureza intocada a poucos minutos da pousada.</p>
+    </div>
+
+    <div class="mv-highlight">
+      <div class="mv-icon">
+        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 28l8-8 6 6 8-10 6 6"/><rect x="4" y="6" width="32" height="28" rx="3"/>
+        </svg>
+      </div>
+      <h4>Gastronomia local</h4>
+      <p>Restaurantes charmosos a poucos passos da pousada.</p>
+    </div>
+
+    <div class="mv-highlight">
+      <div class="mv-icon">
+        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="20" cy="20" r="16"/><path d="M20 4v4M20 32v4M4 20h4M32 20h4"/><path d="M20 12v8l6 4"/>
+        </svg>
+      </div>
+      <h4>Menos de 3h de SP</h4>
+      <p>O destino ideal para uma fuga de fim de semana.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ══════════════════════════════════════════
+     SEÇÃO 6 — CTA FINAL
+══════════════════════════════════════════ -->
+<section id="cta-final">
+  <div class="container">
+    <h2>Não perca esta oportunidade</h2>
+    <p>Garanta já sua reserva com 15% de desconto. Oferta válida para estadias de agosto a novembro de 2026, exceto feriados. Mínimo 2 diárias.</p>
+
+    <div class="countdown-final">
+      <p class="countdown-label">Esta oferta encerra em: 30/09</p>
+      <div class="countdown">
+        <div class="countdown-item">
+          <span class="number" id="f-dias">--</span>
+          <span class="unit">Dias</span>
+        </div>
+        <div class="countdown-item">
+          <span class="number" id="f-horas">--</span>
+          <span class="unit">Horas</span>
+        </div>
+        <div class="countdown-item">
+          <span class="number" id="f-min">--</span>
+          <span class="unit">Min</span>
+        </div>
+        <div class="countdown-item">
+          <span class="number" id="f-seg">--</span>
+          <span class="unit">Seg</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#hero" class="btn btn-ambar">RESGATAR MEU CUPOM AGORA</a>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SEÇÃO 7 — FAQ
+══════════════════════════════════════════ -->
+<section id="faq">
+  <div class="container">
+    <h2>Perguntas frequentes</h2>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Quais são os horários de check-in e check-out?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          Check-in: das 14h às 22h. Check-out: das 9h às 12h. Late check-out (até 18h): sujeito à disponibilidade e cobrança adicional. Consulte a recepção com antecedência.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          O que está incluso na diária?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          Café da manhã especial servido das 8h30 às 11h. Arrumação diária dos quartos. Wi-Fi gratuito. Estacionamento gratuito. 1º saco de lenha com acendedor incluso. Sauna disponível com agendamento (mínimo 1h30 de antecedência).
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Qual a validade deste cupom?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          A validade de uso do cupom é até 30 de Novembro. Esta oferta é válida para estadias de agosto a novembro de 2026, exceto feriados. Mínimo de 2 diárias.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Quais chalés acomodam uma família?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          Temos o Gran Jardim, com 2 suítes, que acomoda uma família perfeitamente.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Onde fica a pousada?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          A pousada fica a 1km do centro de Monte Verde. O acesso é por estrada calçada. Rua do Paiol 177.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Posso compartilhar essa página com meus amigos?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          Claro!
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Posso parcelar?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          Você pode parcelar em até 6 vezes sem juros.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Política de cancelamento
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          Cancelamentos ou alterações são aceitos sem custo até 7 dias antes do check-in.<br><br>
+          Para reservas feitas com 7 dias ou menos de antecedência, o prazo para cancelamento gratuito é de até 12 horas após a confirmação.<br><br>
+          Tarifas promocionais não são reembolsáveis, sem possibilidade de alteração.<br><br>
+          Cancelamentos fora do prazo, não comparecimento ou saída antecipada resultam na cobrança de 100% da reserva.<br><br>
+          Em feriados e alta temporada (de 15 de junho a 15 de agosto), o prazo para cancelamentos ou alterações sem custo é de 14 dias de antecedência.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     RODAPÉ
+══════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-logo">Pousada Jardim Monte Verde</div>
+    <p>Rua do Paiol 177, Monte Verde — MG</p>
+    <p>
+      <a href="https://instagram.com/pousadajardimmonteverde" target="_blank">@pousadajardimmonteverde</a>
+      &nbsp;·&nbsp;
+      <a href="https://api.whatsapp.com/send?phone=553534381350&utm_source=lp_early_booking&utm_medium=footer&utm_campaign=early_booking_2026" target="_blank">Fale pelo WhatsApp</a>
+    </p>
+    <hr class="footer-divider" />
+    <p class="footer-copy">© 2026 Pousada Jardim Monte Verde. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════════════
+     SCRIPTS
+══════════════════════════════════════════ -->
+
+<script>
+(function () {
+  'use strict';
+  var OBRIGADO = 'https://giuiia.github.io/LP-jardim-EarlyBooking/obrigado.html';
+  var API_URL  = 'https://app.rdstation.com.br/api/1.3/conversions';
+  function setupForm() {
+    var form = document.getElementById('conversion-form');
+    if (!form) return;
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      var name  = (form.querySelector('[name="name"]') || {}).value || '';
+      var email = (form.querySelector('[name="email"]') || {}).value || '';
+      var phone = (form.querySelector('[name="personal_phone"]') || {}).value || '';
+      fetch(API_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          token_rdstation: 'd896ee74f661eb727969da5bc022da28',
+          private_token: '712763ab195a4192af9cf52841ba5788',
+          identifier: 'early-booking-d249b95c6b08f7efa3f7',
+          email: email,
+          name: name,
+          mobile_phone: phone,
+          tags: ['EarlyBooking2026']
+        })
+      }).finally(function () {
+        window.location.href = OBRIGADO;
+      });
+    }, true);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupForm);
+  } else {
+    setupForm();
+  }
+})();
+</script>
+
+</div>

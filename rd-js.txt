@@ -1,0 +1,84 @@
+/* ── Pousada Jardim Monte Verde — Early Booking 2026 ── */
+/* Cole no editor "JavaScript no body" do RD Station */
+
+(function () {
+  'use strict';
+
+  /* ── Formulário: submissão via iframe oculto (sem CORS) ── */
+  var form = document.getElementById('conversion-form');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var nameEl  = document.querySelector('#jmv-lp [name="name"]');
+      var emailEl = document.querySelector('#jmv-lp [name="email"]');
+      var phoneEl = document.querySelector('#jmv-lp [name="personal_phone"]');
+
+      if (!nameEl || !nameEl.value.trim() ||
+          !emailEl || !emailEl.value.trim() ||
+          !phoneEl || !phoneEl.value.trim()) {
+        alert('Por favor, preencha todos os campos obrigatórios.');
+        return;
+      }
+
+      var btn = form.querySelector('button[type="submit"]');
+      if (btn) { btn.disabled = true; btn.textContent = 'Enviando...'; }
+
+      /* Submete para iframe oculto — captura o lead no RD sem CORS */
+      var iframe = document.createElement('iframe');
+      iframe.name = 'jmv-rd-frame';
+      iframe.style.cssText = 'display:none;width:0;height:0;border:0;position:absolute;';
+      document.body.appendChild(iframe);
+
+      form.target  = 'jmv-rd-frame';
+      form.method  = 'post';
+      form.action  = 'https://cta-redirect.rdstation.com/v2/conversions';
+      form.submit();
+
+      /* Redireciona para obrigado após 1.5s */
+      setTimeout(function () {
+        window.location.href = 'https://giuiia.github.io/LP-jardim-EarlyBooking/obrigado.html';
+      }, 1500);
+    });
+  }
+
+  /* ── Countdown ── */
+  var deadline = new Date('2026-09-30T23:59:59');
+
+  function pad(n) { return String(n).padStart(2, '0'); }
+
+  function updateCountdown() {
+    var now  = new Date();
+    var diff = deadline - now;
+    if (diff < 0) diff = 0;
+
+    var dias  = Math.floor(diff / 86400000);
+    var horas = Math.floor((diff % 86400000) / 3600000);
+    var min   = Math.floor((diff % 3600000)  / 60000);
+    var seg   = Math.floor((diff % 60000)    / 1000);
+
+    var map = {
+      'h-dias': dias, 'h-horas': horas, 'h-min': min, 'h-seg': seg,
+      'f-dias': dias, 'f-horas': horas, 'f-min': min, 'f-seg': seg
+    };
+
+    Object.keys(map).forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) el.textContent = pad(map[id]);
+    });
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  /* ── FAQ Toggle ── */
+  window.toggleFaq = function (btn) {
+    var item   = btn.closest('.faq-item');
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(function (el) {
+      el.classList.remove('open');
+    });
+    if (!isOpen) item.classList.add('open');
+  };
+
+})();
