@@ -1,0 +1,1092 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preview — Réveillon 2026 Pousada Jardim</title>
+<style>
+/* ── Pousada Jardim Monte Verde — Réveillon 2026/2027 ── */
+/* Cole no campo CSS da Edição Avançada do RD Station */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:wght@600;700;800&display=swap');
+
+@font-face {
+  font-family: 'Bethia';
+  src: url('https://giuiia.github.io/LP-jardim-EarlyBooking/bethia/Bethia.otf') format('opentype'),
+       url('https://giuiia.github.io/LP-jardim-EarlyBooking/bethia/Bethia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ── Ocultar conteúdo padrão do RD Station (sem esconder os wrappers da LP) ── */
+body > *:not(:has(#jmv-lp)):not(script):not(style):not(link) {
+  display: none !important;
+}
+
+/* ── Neutralizar larguras/margens dos wrappers do RD (página estreita) ── */
+html, body { margin: 0 !important; padding: 0 !important; background: #F1E4D3 !important; }
+.bricks--container, .bricks--page, .bricks--section, .bricks--row, .bricks--column,
+.rd-section, .rd-row, .rd-column {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  float: none !important;
+}
+
+/* ── Reset local ── */
+#jmv-lp, #jmv-lp *, #jmv-lp *::before, #jmv-lp *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#jmv-lp {
+  --verde:     #0C2C28;
+  --terracota: #9A4B2A;
+  --ambar:     #D48D4A;
+  --bege:      #D7BE98;
+  --creme:     #F1E4D3;
+  --branco:    #FFFFFF;
+  --cinza:     #6B7280;
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--creme);
+  color: var(--verde);
+  line-height: 1.6;
+  width: 100%;
+  padding-bottom: 76px; /* espaço para a sticky bar */
+}
+
+html { scroll-behavior: smooth; }
+
+#jmv-lp h1, #jmv-lp h2, #jmv-lp h3, #jmv-lp h4 { font-family: 'Bethia', serif; }
+#jmv-lp img { max-width: 100%; display: block; }
+#jmv-lp a { text-decoration: none; color: inherit; }
+
+#jmv-lp .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+/* ── Buttons (Montserrat, conforme identidade) ── */
+#jmv-lp .btn {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+#jmv-lp .btn-ambar { background: var(--ambar); color: var(--branco); }
+#jmv-lp .btn-ambar:hover { background: var(--terracota); }
+#jmv-lp .btn-verde { background: var(--verde); color: var(--branco); }
+#jmv-lp .btn-verde:hover { background: #0f3830; }
+#jmv-lp .btn-outline-verde { background: transparent; color: var(--verde); border: 2px solid var(--verde); }
+#jmv-lp .btn-outline-verde:hover { background: var(--verde); color: var(--branco); }
+#jmv-lp .btn-outline-ambar { background: transparent; color: var(--ambar); border: 2px solid var(--ambar); }
+#jmv-lp .btn-outline-ambar:hover { background: var(--ambar); color: var(--branco); }
+#jmv-lp .btn-outline-branco { background: transparent; color: var(--branco); border: 2px solid rgba(255,255,255,0.6); }
+#jmv-lp .btn-outline-branco:hover { background: var(--branco); color: var(--verde); }
+
+#jmv-lp .eyebrow {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--terracota);
+  margin-bottom: 10px;
+}
+
+/* ══════════════════════════════════════════
+   CABEÇALHO
+══════════════════════════════════════════ */
+#jmv-lp #cabecalho {
+  background: var(--verde);
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#jmv-lp .header-logo { height: 64px; width: auto; filter: brightness(0) invert(1); }
+
+/* ══════════════════════════════════════════
+   SEÇÃO 1 — HERO
+══════════════════════════════════════════ */
+#jmv-lp #hero {
+  background: var(--verde);
+  color: var(--branco);
+  padding: 80px 0 56px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+#jmv-lp #hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('https://giuiia.github.io/LP-jardim-EarlyBooking/reveillon-hero.jpg') center/cover no-repeat;
+  opacity: 0.65;
+}
+#jmv-lp #hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(12,44,40,0.35) 0%, rgba(12,44,40,0.8) 100%);
+}
+#jmv-lp .hero-inner { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; }
+#jmv-lp .hero-selo {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 40px;
+  padding: 8px 20px;
+  margin-bottom: 24px;
+  color: var(--branco);
+}
+#jmv-lp .hero-inner h1 {
+  font-size: clamp(32px, 5vw, 54px);
+  line-height: 1.15;
+  margin-bottom: 18px;
+  color: var(--branco);
+}
+#jmv-lp .hero-subhead {
+  font-size: 17px;
+  color: rgba(255,255,255,0.85);
+  max-width: 540px;
+  margin: 0 auto 28px;
+}
+#jmv-lp .hero-pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 36px; }
+#jmv-lp .pill {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--branco);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 40px;
+  padding: 8px 18px;
+  background: rgba(255,255,255,0.06);
+}
+
+/* Countdown */
+#jmv-lp .countdown-wrap { margin-bottom: 36px; }
+#jmv-lp .countdown-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 10px;
+}
+#jmv-lp .countdown { display: flex; justify-content: center; gap: 12px; }
+#jmv-lp .countdown-item {
+  background: rgba(0,0,0,0.2);
+  border: 1px solid rgba(212,141,74,0.3);
+  border-radius: 8px;
+  padding: 12px 16px;
+  text-align: center;
+  min-width: 72px;
+}
+#jmv-lp .countdown-item .number {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--branco);
+  line-height: 1;
+}
+#jmv-lp .countdown-item .unit {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--ambar);
+  margin-top: 4px;
+}
+
+#jmv-lp .hero-ctas { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-bottom: 16px; }
+#jmv-lp .hero-microcopy { font-size: 12px; color: rgba(255,255,255,0.55); }
+
+/* ══════════════════════════════════════════
+   SEÇÃO 2 — A EXPERIÊNCIA
+══════════════════════════════════════════ */
+#jmv-lp #experiencia { background: var(--branco); padding: 80px 0; }
+#jmv-lp .experiencia-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+#jmv-lp .experiencia-fotos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 240px 160px;
+  gap: 12px;
+}
+#jmv-lp .experiencia-fotos .foto-grande { grid-column: span 2; border-radius: 10px; overflow: hidden; }
+#jmv-lp .experiencia-fotos .foto-grande img { width: 100%; height: 100%; object-fit: cover; }
+#jmv-lp .experiencia-fotos .foto { border-radius: 10px; overflow: hidden; }
+#jmv-lp .experiencia-fotos .foto img { width: 100%; height: 100%; object-fit: cover; }
+
+#jmv-lp .experiencia-texto h2 { font-size: clamp(26px, 3vw, 38px); margin-bottom: 10px; }
+#jmv-lp .experiencia-sub { font-size: 16px; color: var(--terracota); font-weight: 700; margin-bottom: 20px; }
+#jmv-lp .experiencia-desc { font-size: 15px; color: #4B6660; line-height: 1.75; margin-bottom: 20px; }
+#jmv-lp .experiencia-lista {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 16px;
+  margin-bottom: 24px;
+}
+#jmv-lp .experiencia-lista li {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--verde);
+  padding-left: 18px;
+  position: relative;
+}
+#jmv-lp .experiencia-lista li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 8px;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--ambar);
+}
+#jmv-lp .experiencia-apoio { font-size: 14px; font-style: italic; color: var(--cinza); }
+
+/* ══════════════════════════════════════════
+   SEÇÃO 3 — BARRA DE URGÊNCIA
+══════════════════════════════════════════ */
+#jmv-lp #urgencia { background: var(--bege); padding: 18px 0; }
+#jmv-lp .urgencia-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  color: var(--verde);
+}
+#jmv-lp .urgencia-inner svg { flex-shrink: 0; color: var(--terracota); }
+#jmv-lp .urgencia-inner p { font-size: 14px; font-weight: 600; }
+
+/* ══════════════════════════════════════════
+   SEÇÃO 4 — PACOTES
+══════════════════════════════════════════ */
+#jmv-lp #pacotes { background: var(--creme); padding: 80px 0; }
+#jmv-lp #pacotes .section-header { text-align: center; margin-bottom: 44px; }
+#jmv-lp #pacotes h2 { font-size: clamp(26px, 3vw, 38px); margin-bottom: 10px; }
+#jmv-lp #pacotes .section-header p { font-size: 16px; color: #4B6660; max-width: 560px; margin: 0 auto; }
+
+#jmv-lp .pacotes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+#jmv-lp .pacote-card {
+  background: var(--branco);
+  border-radius: 10px;
+  padding: 32px 28px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#jmv-lp .pacote-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--terracota);
+  margin-bottom: 14px;
+}
+#jmv-lp .pacote-numero {
+  font-family: 'Bethia', serif;
+  font-size: 56px;
+  line-height: 1;
+  color: var(--verde);
+}
+#jmv-lp .pacote-diarias {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--cinza);
+  margin-bottom: 18px;
+}
+#jmv-lp .pacote-card p { font-size: 14px; color: #4B6660; line-height: 1.65; margin-bottom: 22px; flex: 1; }
+
+#jmv-lp .incluso-box {
+  background: var(--verde);
+  border-radius: 10px;
+  padding: 32px;
+  margin-bottom: 32px;
+}
+#jmv-lp .incluso-titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--ambar);
+  text-align: center;
+  margin-bottom: 20px;
+}
+#jmv-lp .incluso-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 24px; }
+#jmv-lp .incluso-item { display: flex; align-items: center; gap: 10px; color: var(--branco); font-size: 14px; }
+#jmv-lp .incluso-item svg { color: var(--ambar); flex-shrink: 0; }
+
+#jmv-lp .familia-box {
+  background: var(--bege);
+  border-left: 4px solid var(--terracota);
+  border-radius: 8px;
+  padding: 32px 36px;
+  text-align: center;
+}
+#jmv-lp .familia-box h3 { font-size: 24px; color: var(--terracota); margin-bottom: 14px; }
+#jmv-lp .familia-box p { font-size: 15px; color: var(--verde); max-width: 640px; margin: 0 auto 12px; line-height: 1.7; }
+#jmv-lp .familia-box .btn { margin-top: 12px; }
+
+/* ══════════════════════════════════════════
+   SEÇÃO 5 — CATEGORIAS DE ACOMODAÇÃO
+══════════════════════════════════════════ */
+#jmv-lp #categorias { background: var(--branco); padding: 80px 0; }
+#jmv-lp #categorias .section-header { text-align: center; margin-bottom: 40px; }
+#jmv-lp #categorias h2 { font-size: clamp(26px, 3vw, 38px); margin-bottom: 10px; }
+#jmv-lp #categorias .section-header p { font-size: 16px; color: #4B6660; }
+#jmv-lp .categoria-subtitulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--terracota);
+  margin: 0 0 18px;
+}
+#jmv-lp .categorias-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+#jmv-lp .categorias-grid-2 { display: flex; justify-content: center; gap: 24px; margin-bottom: 0; }
+#jmv-lp .categorias-grid-2 .categoria-card { flex: 0 1 calc((100% - 48px) / 3); }
+#jmv-lp .categoria-card { background: var(--creme); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; }
+#jmv-lp .categoria-card-img { position: relative; width: 100%; height: 200px; overflow: hidden; }
+#jmv-lp .categoria-card-img img { width: 100%; height: 100%; object-fit: cover; }
+#jmv-lp .categoria-card-img-placeholder {
+  background: repeating-linear-gradient(45deg, #E4D3BB, #E4D3BB 10px, #D7BE98 10px, #D7BE98 20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#jmv-lp .placeholder-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--verde);
+  background: rgba(255,255,255,0.75);
+  padding: 8px 16px;
+  border-radius: 40px;
+}
+#jmv-lp .categoria-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--verde);
+  color: var(--branco);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 40px;
+  z-index: 1;
+}
+#jmv-lp .categoria-card-body { padding: 22px; flex: 1; display: flex; flex-direction: column; }
+#jmv-lp .categoria-card-body h3 { font-size: 19px; margin-bottom: 6px; }
+#jmv-lp .categoria-specs { font-size: 12px; font-weight: 700; color: var(--terracota); margin-bottom: 10px; }
+#jmv-lp .categoria-card-body p:not(.categoria-specs) { font-size: 14px; color: #4B6660; flex: 1; margin-bottom: 18px; line-height: 1.6; }
+#jmv-lp .categoria-card-body .btn { align-self: flex-start; font-size: 11px; padding: 10px 20px; }
+
+/* ══════════════════════════════════════════
+   SEÇÃO 6 — PROVA SOCIAL & DIFERENCIAIS
+══════════════════════════════════════════ */
+#jmv-lp #prova-social { background: var(--creme); padding: 80px 0; border-top: 1px solid rgba(12,44,40,0.1); }
+#jmv-lp #prova-social .section-header { text-align: center; margin-bottom: 24px; }
+#jmv-lp #prova-social h2 { font-size: clamp(26px, 3vw, 36px); }
+#jmv-lp .avaliacoes-badge { text-align: center; margin-bottom: 36px; }
+#jmv-lp .avaliacoes-badge span {
+  display: inline-block;
+  background: var(--verde);
+  color: var(--branco);
+  padding: 12px 24px;
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: 700;
+}
+#jmv-lp .diferenciais-lista {
+  list-style: none;
+  max-width: 620px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+#jmv-lp .diferenciais-lista li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  color: var(--verde);
+  font-weight: 600;
+}
+#jmv-lp .diferenciais-lista li svg { color: var(--ambar); flex-shrink: 0; }
+
+/* ══════════════════════════════════════════
+   SEÇÃO 7 — FAQ
+══════════════════════════════════════════ */
+#jmv-lp #faq { background: var(--branco); padding: 80px 0; }
+#jmv-lp #faq h2 { font-size: clamp(26px, 3vw, 36px); text-align: center; margin-bottom: 48px; }
+#jmv-lp .faq-list { max-width: 760px; margin: 0 auto; }
+#jmv-lp .faq-item { border-bottom: 1px solid rgba(12,44,40,0.12); }
+#jmv-lp .faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 22px 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--verde);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+#jmv-lp .faq-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--ambar);
+  color: var(--branco);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 400;
+  transition: transform 0.2s;
+}
+#jmv-lp .faq-item.open .faq-icon { transform: rotate(45deg); }
+#jmv-lp .faq-answer { display: none; padding: 0 0 22px; font-size: 15px; color: #4B6660; line-height: 1.75; }
+#jmv-lp .faq-item.open .faq-answer { display: block; }
+
+/* ══════════════════════════════════════════
+   SEÇÃO 8 — CTA FINAL / FORMULÁRIO
+══════════════════════════════════════════ */
+#jmv-lp #cta-final { background: var(--verde); color: var(--branco); padding: 80px 0; }
+#jmv-lp .cta-final-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+#jmv-lp .cta-final-copy h2 { font-size: clamp(28px, 4vw, 44px); margin-bottom: 14px; color: var(--branco); }
+#jmv-lp .cta-final-copy p { font-size: 16px; color: rgba(255,255,255,0.8); margin-bottom: 28px; }
+#jmv-lp .cta-final-links { display: flex; flex-direction: column; gap: 12px; }
+#jmv-lp .cta-final-links a { font-size: 14px; font-weight: 700; color: var(--ambar); }
+#jmv-lp .cta-final-links a:hover { text-decoration: underline; }
+
+#jmv-lp .hero-form-card {
+  background: var(--creme);
+  color: var(--verde);
+  border-radius: 12px;
+  padding: 40px 36px;
+}
+#jmv-lp .hero-form-card h3 { font-size: 22px; margin-bottom: 6px; }
+#jmv-lp .hero-form-card .form-sub { font-size: 14px; color: var(--cinza); margin-bottom: 24px; }
+#jmv-lp .form-group { margin-bottom: 16px; }
+#jmv-lp .form-group label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--verde);
+  margin-bottom: 6px;
+}
+#jmv-lp .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid rgba(12,44,40,0.2);
+  border-radius: 6px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: var(--verde);
+  background: var(--branco);
+  outline: none;
+  transition: border-color 0.2s;
+}
+#jmv-lp .form-group input:focus { border-color: var(--ambar); }
+
+#jmv-lp .form-submit {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  width: 100%;
+  margin-top: 8px !important;
+  padding: 16px !important;
+  font-size: 13px !important;
+  background: var(--ambar) !important;
+  color: var(--branco) !important;
+  border: none !important;
+  border-radius: 4px !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.2px !important;
+  text-transform: uppercase !important;
+  cursor: pointer !important;
+  transition: background 0.2s !important;
+}
+#jmv-lp .form-submit:hover { background: var(--terracota) !important; }
+#jmv-lp .form-privacy { font-size: 11px; color: var(--cinza); text-align: center; margin-top: 12px; }
+
+/* ══════════════════════════════════════════
+   SEÇÃO 9 — BARRA FIXA (STICKY BAR)
+══════════════════════════════════════════ */
+#jmv-lp .sticky-bar {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 999;
+  background: var(--verde);
+  border-top: 1px solid rgba(212,141,74,0.3);
+  padding: 14px 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+#jmv-lp .sticky-bar.visible { transform: translateY(0); }
+#jmv-lp .sticky-bar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+#jmv-lp .sticky-texto { font-size: 14px; font-weight: 700; color: var(--branco); }
+#jmv-lp .sticky-texto span { color: var(--ambar); font-family: 'Montserrat', sans-serif; }
+#jmv-lp .btn-sticky { padding: 12px 24px; font-size: 12px; }
+
+/* ══════════════════════════════════════════
+   RODAPÉ
+══════════════════════════════════════════ */
+#jmv-lp footer {
+  background: var(--verde);
+  color: rgba(255,255,255,0.75);
+  padding: 48px 0 32px;
+  text-align: center;
+}
+#jmv-lp .footer-logo { font-family: 'Bethia', serif; font-size: 22px; color: var(--ambar); margin-bottom: 16px; letter-spacing: 1px; }
+#jmv-lp footer p { font-size: 13px; margin-bottom: 6px; }
+#jmv-lp footer a { color: var(--ambar); }
+#jmv-lp footer a:hover { text-decoration: underline; }
+#jmv-lp .footer-tel { color: rgba(255,255,255,0.55); font-size: 12px; }
+#jmv-lp .footer-divider { border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 24px auto; max-width: 400px; }
+#jmv-lp .footer-copy { font-size: 11px; color: rgba(255,255,255,0.4); }
+
+/* ══════════════════════════════════════════
+   RESPONSIVIDADE
+══════════════════════════════════════════ */
+@media (max-width: 900px) {
+  #jmv-lp .experiencia-inner { grid-template-columns: 1fr; gap: 32px; }
+  #jmv-lp .pacotes-grid { grid-template-columns: 1fr; }
+  #jmv-lp .categorias-grid { grid-template-columns: repeat(2, 1fr); }
+  #jmv-lp .categorias-grid-2 .categoria-card { flex-basis: calc((100% - 24px) / 2); }
+  #jmv-lp .incluso-grid { grid-template-columns: 1fr; }
+  #jmv-lp .cta-final-inner { grid-template-columns: 1fr; gap: 36px; }
+  #jmv-lp .experiencia-lista { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  #jmv-lp .categorias-grid { grid-template-columns: 1fr; }
+  #jmv-lp .categorias-grid-2 { flex-direction: column; align-items: stretch; }
+  #jmv-lp .categorias-grid-2 .categoria-card { flex-basis: auto; }
+  #jmv-lp .experiencia-fotos { grid-template-rows: 200px 140px; }
+  #jmv-lp .countdown { flex-wrap: wrap; }
+  #jmv-lp .countdown-item { min-width: 60px; padding: 10px 12px; }
+  #jmv-lp .countdown-item .number { font-size: 24px; }
+  #jmv-lp .sticky-bar-inner { justify-content: center; text-align: center; }
+  #jmv-lp .hero-ctas { flex-direction: column; width: 100%; }
+  #jmv-lp .hero-ctas .btn { width: 100%; }
+}
+
+</style>
+</head>
+<body>
+<div class="rd-wrapper-simulado">
+<div id="jmv-lp">
+<!-- CABEÇALHO -->
+<header id="cabecalho">
+  <a href="#hero">
+    <img src="https://giuiia.github.io/LP-jardim-EarlyBooking/jardim_logo.png" alt="Pousada Jardim Monte Verde" class="header-logo" />
+  </a>
+</header>
+
+<!-- SEÇÃO 1 — HERO -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <span class="hero-selo">RÉVEILLON 2026/2027</span>
+      <h1>Vire o ano em meio à<br/>Serra da Mantiqueira.</h1>
+      <p class="hero-subhead">Chalés aconchegantes, café da manhã incluso, piscina e spa. A virada de ano perfeita para casais e famílias.</p>
+
+      <div class="hero-pills">
+        <span class="pill">Café da manhã incluso todos os dias</span>
+        <span class="pill">Piscina</span>
+        <span class="pill">A 900m do centro</span>
+      </div>
+
+      <div class="countdown-wrap">
+        <p class="countdown-label">Faltam</p>
+        <div class="countdown">
+          <div class="countdown-item"><span class="number" id="h-dias">--</span><span class="unit">Dias</span></div>
+          <div class="countdown-item"><span class="number" id="h-horas">--</span><span class="unit">Horas</span></div>
+          <div class="countdown-item"><span class="number" id="h-min">--</span><span class="unit">Min</span></div>
+          <div class="countdown-item"><span class="number" id="h-seg">--</span><span class="unit">Seg</span></div>
+        </div>
+        <p class="countdown-label">para o Réveillon na Pousada Jardim</p>
+      </div>
+
+      <div class="hero-ctas">
+        <a href="#cta-final" class="btn btn-ambar">QUERO GARANTIR MINHA VAGA</a>
+        <a href="#experiencia" class="btn btn-outline-branco">VER A EXPERIÊNCIA</a>
+      </div>
+      <p class="hero-microcopy">Vagas limitadas por categoria de chalé.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- SEÇÃO 2 — A EXPERIÊNCIA -->
+<section id="experiencia">
+  <div class="container">
+    <div class="experiencia-inner">
+
+      <div class="experiencia-fotos">
+        <div class="foto-grande">
+          <img src="https://giuiia.github.io/LP-jardim-EarlyBooking/reveillon-chale-aconchego.jpg" alt="Chalé aconchegante com lareira" />
+        </div>
+        <div class="foto">
+          <img src="https://giuiia.github.io/LP-jardim-EarlyBooking/Cafedamanha.jpg" alt="Café da manhã servido" />
+        </div>
+        <div class="foto">
+          <img src="https://giuiia.github.io/LP-jardim-EarlyBooking/fotopiscina.jpg" alt="Piscina" />
+        </div>
+      </div>
+
+      <div class="experiencia-texto">
+        <h2>Um refúgio para desacelerar, dentro e fora do chalé.</h2>
+        <p class="experiencia-sub">O que torna a Pousada Jardim especial no Réveillon, muito antes da virada.</p>
+        <p class="experiencia-desc"><strong>Café da manhã:</strong> pães artesanais, bolos caseiros, frutas frescas, frios e sucos naturais, servido todos os dias, incluso em todos os pacotes.</p>
+        <ul class="experiencia-lista">
+          <li>Piscina externa</li>
+          <li>Spa &amp; Wellness</li>
+          <li>Academia</li>
+          <li>Sauna seca</li>
+          <li>Quadra de tênis</li>
+          <li>A 900 m da Avenida Monte Verde</li>
+        </ul>
+        <p class="experiencia-apoio">Chegue com alguns dias de antecedência e aproveite a Serra da Mantiqueira.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- SEÇÃO 3 — BARRA DE URGÊNCIA -->
+<section id="urgencia">
+  <div class="container urgencia-inner">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+    <p>Para manter a experiência intimista, o Réveillon tem vagas limitadas por categoria de chalé.</p>
+  </div>
+</section>
+
+
+<!-- SEÇÃO 4 — OFERTA: PACOTES DE RÉVEILLON -->
+<section id="pacotes">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">PACOTES DE RÉVEILLON</span>
+      <h2>Quanto mais tempo na serra, mais leve fica a diária.</h2>
+      <p>Escolha a duração da sua virada de ano, a partir de 3 diárias, com condição especial para quem fica mais tempo.</p>
+    </div>
+
+    <div class="pacotes-grid">
+
+      <div class="pacote-card">
+        <span class="pacote-label">ESSENCIAL</span>
+        <span class="pacote-numero">3</span>
+        <span class="pacote-diarias">DIÁRIAS</span>
+        <p>Ideal para uma escapada rápida de fim de ano, com todo o aconchego da Pousada Jardim.</p>
+        <a href="https://hbook.hsystem.com.br/Booking?companyId=62da06aa6959216cb6cf92dc&checkin=30/12/2026&checkout=02/01/2027&adults=2" target="_blank" rel="noopener" class="btn btn-outline-verde">Quero esse pacote</a>
+      </div>
+
+      <div class="pacote-card">
+        <span class="pacote-label">REFÚGIO · 10% de economia</span>
+        <span class="pacote-numero">4</span>
+        <span class="pacote-diarias">DIÁRIAS</span>
+        <p>Mais tempo para aproveitar o ritmo da serra, piscina, spa e café, além da noite da virada. 10% de economia na diária.</p>
+        <a href="https://hbook.hsystem.com.br/Booking?companyId=62da06aa6959216cb6cf92dc&checkin=29/12/2026&checkout=02/01/2027&adults=2&promocode=AN4" target="_blank" rel="noopener" class="btn btn-outline-verde">Quero esse pacote</a>
+      </div>
+
+      <div class="pacote-card">
+        <span class="pacote-label">COMPLETO · 15% de economia</span>
+        <span class="pacote-numero">5</span>
+        <span class="pacote-diarias">DIÁRIAS</span>
+        <p>Para quem quer começar o ano com calma, sem pressa para voltar para casa. 15% de economia na diária.</p>
+        <a href="https://hbook.hsystem.com.br/Booking?companyId=62da06aa6959216cb6cf92dc&checkin=29/12/2026&checkout=03/01/2027&adults=2&promocode=an5" target="_blank" rel="noopener" class="btn btn-outline-verde">Quero esse pacote</a>
+      </div>
+
+    </div>
+
+    <div class="incluso-box">
+      <p class="incluso-titulo">O que está incluso em todos os pacotes</p>
+      <div class="incluso-grid">
+        <div class="incluso-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Hospedagem na categoria escolhida</span></div>
+        <div class="incluso-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Café da manhã completo, todos os dias</span></div>
+        <div class="incluso-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Acesso à piscina, spa, academia, sauna seca e quadra de tênis</span></div>
+        <div class="incluso-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Wi-Fi e estacionamento gratuitos</span></div>
+      </div>
+    </div>
+
+    <div class="familia-box">
+      <h3>Viajar em família sai mais leve.</h3>
+      <p>O Gran Jardim Family comporta até 4 hóspedes em um só chalé. A Casa Volksgarden é aconchegante para famílias de até 6 pessoas.</p>
+      <p>Espaço de sobra para reunir todo mundo na virada do ano. Crianças de até 5 anos são bem-vindas como cortesia, quando acomodadas na cama dos pais no mesmo quarto.</p>
+      <a href="#cta-final" class="btn btn-verde">Quero essas opções</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- SEÇÃO 5 — CATEGORIAS DE ACOMODAÇÃO -->
+<section id="categorias">
+  <div class="container">
+    <div class="section-header">
+      <h2>Cada jeito de viver o Réveillon tem um chalé</h2>
+      <p>Escolha a categoria que combina com o seu momento.</p>
+    </div>
+
+    <p class="categoria-subtitulo">Para casais</p>
+    <div class="categorias-grid">
+
+      <div class="categoria-card">
+        <div class="categoria-card-img">
+          <span class="categoria-badge">PARA CASAIS</span>
+          <img src="https://giuiia.github.io/LP-jardim-EarlyBooking/MonetLuxo.jpg" alt="Chalé Monet Luxo" />
+        </div>
+        <div class="categoria-card-body">
+          <h3>Chalé Monet Luxo</h3>
+          <p class="categoria-specs">50 m² · cama queen · 2 adultos</p>
+          <p>Hidromassagem, jardim privativo e o máximo em conforto para casais.</p>
+          <a href="#cta-final" class="btn btn-outline-ambar">Quero esse chalé</a>
+        </div>
+      </div>
+
+      <div class="categoria-card">
+        <div class="categoria-card-img">
+          <span class="categoria-badge">PARA CASAIS</span>
+          <img src="https://giuiia.github.io/LP-jardim-EarlyBooking/Monet.jpg" alt="Chalé Monet" />
+        </div>
+        <div class="categoria-card-body">
+          <h3>Chalé Monet</h3>
+          <p class="categoria-specs">50 m² · cama queen · 2 adultos + 1 extra</p>
+          <p>Espaço, varanda e romantismo em meio à natureza.</p>
+          <a href="#cta-final" class="btn btn-outline-ambar">Quero esse chalé</a>
+        </div>
+      </div>
+
+      <div class="categoria-card">
+        <div class="categoria-card-img">
+          <span class="categoria-badge">PARA CASAIS</span>
+          <img src="https://giuiia.github.io/LP-jardim-EarlyBooking/Garden.jpg" alt="Chalé Garden" />
+        </div>
+        <div class="categoria-card-body">
+          <h3>Chalé Garden</h3>
+          <p class="categoria-specs">30 m² · cama queen · 2 adultos + 1 extra</p>
+          <p>Conforto e vista de jardim com ótimo custo-benefício.</p>
+          <a href="#cta-final" class="btn btn-outline-ambar">Quero esse chalé</a>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="categoria-subtitulo">Para família · até 4 hóspedes</p>
+    <div class="categorias-grid categorias-grid-2">
+
+      <div class="categoria-card">
+        <div class="categoria-card-img">
+          <span class="categoria-badge">ATÉ 4 HÓSPEDES</span>
+          <img src="https://giuiia.github.io/LP-jardim-EarlyBooking/grandjardim.jpg" alt="Gran Jardim Family" />
+        </div>
+        <div class="categoria-card-body">
+          <h3>Gran Jardim Family</h3>
+          <p class="categoria-specs">68 m² · 2 camas queen · 4 adultos</p>
+          <p>Dois quartos e amplo espaço para toda a família aproveitar Monte Verde.</p>
+          <a href="#cta-final" class="btn btn-outline-ambar">Quero esse chalé</a>
+        </div>
+      </div>
+
+      <div class="categoria-card">
+        <div class="categoria-card-img">
+          <span class="categoria-badge">ATÉ 6 HÓSPEDES</span>
+          <img src="https://giuiia.github.io/LP-jardim-EarlyBooking/reveillon-volksgarden.jpg" alt="Casa Volksgarden" />
+        </div>
+        <div class="categoria-card-body">
+          <h3>Casa Volksgarden</h3>
+          <p class="categoria-specs">68 m² · 3 quartos · 3 banheiros individuais · 6 adultos</p>
+          <p>Casa completa com três quartos, pensada para famílias e grupos.</p>
+          <a href="#cta-final" class="btn btn-outline-ambar">Quero esse chalé</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- SEÇÃO 6 — PROVA SOCIAL & DIFERENCIAIS -->
+<section id="prova-social">
+  <div class="container">
+    <div class="section-header">
+      <h2>Por que viver o Réveillon na Pousada Jardim</h2>
+    </div>
+    <div class="avaliacoes-badge">
+      <span>4,5 no TripAdvisor · 78 avaliações</span>
+    </div>
+    <ul class="diferenciais-lista">
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Pousada de charme na Serra da Mantiqueira</li>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>A 900 m da Avenida Monte Verde, sem abrir mão da tranquilidade</li>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Café da manhã elogiado pelos hóspedes em praticamente todas as avaliações</li>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Ambiente pet friendly</li>
+    </ul>
+    <!-- TODO: adicionar carrossel de depoimentos reais (Google/TripAdvisor/Booking) mediante autorização do hóspede -->
+  </div>
+</section>
+
+
+<!-- SEÇÃO 7 — PERGUNTAS FREQUENTES (FAQ) -->
+<section id="faq">
+  <div class="container">
+    <h2>Tudo o que você precisa saber</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Qual o período mínimo de hospedagem no Réveillon?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">O período mínimo é de 3 diárias, com opções de pacotes de 3, 4 ou 5 diárias.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">O que está incluso no pacote de Réveillon?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">Hospedagem na categoria escolhida, café da manhã completo todos os dias e acesso a toda a estrutura de lazer da pousada (piscina, spa, academia, sauna seca e quadra de tênis).</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">A pousada aceita pets?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">Sim, somos pet friendly. Consulte condições e taxas no momento da reserva.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Qual o horário de check-in e check-out?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">Check-in das 14h às 22h e check-out das 9h às 12h. Late check-out até 18h mediante disponibilidade e cobrança adicional, consulte a recepção com antecedência.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Há desconto para crianças?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">Crianças até 5 anos se hospedam como cortesia, acomodadas na cama dos pais no mesmo quarto. A partir de 6 anos, ou em cama extra, a criança é considerada hóspede adicional na reserva.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Como funciona o pagamento e o cancelamento?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">Para garantir a reserva, é necessário o pagamento de 50% do valor total (o restante pode ser pago no check-in, em até 3x no cartão). Por se tratar de uma tarifa promocional, o pacote de Réveillon não é reembolsável em caso de cancelamento.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- SEÇÃO 8 — CTA FINAL / FORMULÁRIO DE RESERVA -->
+<section id="cta-final">
+  <div class="container">
+    <div class="cta-final-inner">
+
+      <div class="cta-final-copy">
+        <h2>Sua virada de ano na Serra começa aqui</h2>
+        <p>Escolha o pacote ideal para sua estadia ou fale com a nossa equipe para tirar suas dúvidas.</p>
+        <div class="cta-final-links">
+          <a href="#pacotes">Conheça os pacotes →</a>
+          <a href="https://wa.me/5535998290901?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20pacotes%20de%20R%C3%A9veillon." target="_blank" rel="noopener">Falar com a pousada pelo WhatsApp →</a>
+        </div>
+      </div>
+
+      <div class="hero-form-card">
+        <h3>Quer receber mais informações?</h3>
+        <p class="form-sub">Deixe seus dados e nossa equipe entra em contato para enviar todas as informações.</p>
+        <form id="conversion-form">
+          <div class="form-group">
+            <label for="f-nome">Nome *</label>
+            <input type="text" id="f-nome" name="name" placeholder="Seu nome" required />
+          </div>
+          <div class="form-group">
+            <label for="f-telefone">Telefone / WhatsApp *</label>
+            <input type="tel" id="f-telefone" name="personal_phone" placeholder="(00) 00000-0000" required />
+          </div>
+          <div class="form-group">
+            <label for="f-email">E-mail *</label>
+            <input type="email" id="f-email" name="email" placeholder="seu@email.com" required />
+          </div>
+          <button type="submit" class="form-submit" id="form-btn">QUERO RECEBER AS INFORMAÇÕES</button>
+        </form>
+        <p class="form-privacy">Seus dados estão seguros. Não enviamos spam.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- SEÇÃO 9 — BARRA FIXA (STICKY BAR) -->
+<div id="sticky-bar" class="sticky-bar">
+  <div class="container sticky-bar-inner">
+    <p class="sticky-texto">Faltam <span id="s-dias">--</span> dias para o Réveillon na Pousada Jardim</p>
+    <a href="#cta-final" class="btn btn-ambar btn-sticky">Quero garantir minha vaga</a>
+  </div>
+</div>
+
+
+<!-- SEÇÃO 10 — RODAPÉ -->
+<footer>
+  <div class="container">
+    <div class="footer-logo">Pousada Jardim Monte Verde</div>
+    <p>Rua do Paiol, 177, Monte Verde, Camanducaia - MG</p>
+    <p>
+      <a href="https://api.whatsapp.com/send?phone=5535998290901" target="_blank">WhatsApp (35) 99829-0901</a>
+      &nbsp;·&nbsp;
+      <a href="https://www.instagram.com/pousadajardimmv/" target="_blank">@pousadajardimmv</a>
+    </p>
+    <p class="footer-tel">Telefone: (35) 3438-1350</p>
+    <hr class="footer-divider" />
+    <p class="footer-copy">© 2026 Pousada Jardim Monte Verde. Todos os direitos reservados.</p>
+  </div>
+</footer>
+</div>
+
+</div>
+<script>
+/* ── Pousada Jardim Monte Verde — Réveillon 2026/2027 ── */
+/* Cole no campo 'Javascript em BODY' */
+
+(function () {
+  'use strict';
+
+  /* ── Countdown até 31/12/2026 23:59:59 (horário de Brasília) ── */
+  var deadline = new Date('2026-12-31T23:59:59-03:00');
+  function pad(n) { return String(n).padStart(2, '0'); }
+  function updateCountdown() {
+    var diff = Math.max(0, deadline - new Date());
+    var dias  = Math.floor(diff / 86400000);
+    var horas = Math.floor((diff % 86400000) / 3600000);
+    var min   = Math.floor((diff % 3600000) / 60000);
+    var seg   = Math.floor((diff % 60000) / 1000);
+    var map = { 'h-dias': dias, 'h-horas': horas, 'h-min': min, 'h-seg': seg };
+    Object.keys(map).forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el) el.textContent = pad(map[id]);
+    });
+    var sDias = document.getElementById('s-dias');
+    if (sDias) sDias.textContent = dias;
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  /* ── FAQ Toggle ── */
+  window.toggleFaq = function(btn) {
+    var item = btn.closest('.faq-item');
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(function(el) { el.classList.remove('open'); });
+    if (!isOpen) item.classList.add('open');
+  };
+
+  /* ── Barra fixa (sticky bar) — aparece depois que sai do Hero ── */
+  var stickyBar = document.getElementById('sticky-bar');
+  var heroEl = document.getElementById('hero');
+  if (stickyBar && heroEl) {
+    var toggleSticky = function() {
+      var heroBottom = heroEl.getBoundingClientRect().bottom;
+      if (heroBottom < 0) {
+        stickyBar.classList.add('visible');
+      } else {
+        stickyBar.classList.remove('visible');
+      }
+    };
+    toggleSticky();
+    window.addEventListener('scroll', toggleSticky, { passive: true });
+  }
+
+  /* ── Formulário — submissão RD Station v1.3 ── */
+  var form = document.getElementById('conversion-form');
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      var nome  = document.getElementById('f-nome').value.trim();
+      var email = document.getElementById('f-email').value.trim();
+      var phone = document.getElementById('f-telefone').value.trim();
+
+      if (!nome || !email || !phone) {
+        alert('Por favor, preencha todos os campos obrigatórios.');
+        return;
+      }
+
+      var btn = document.getElementById('form-btn');
+      if (btn) { btn.disabled = true; btn.textContent = 'Enviando...'; }
+
+      fetch('https://app.rdstation.com.br/api/1.3/conversions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          token_rdstation: 'd896ee74f661eb727969da5bc022da28',
+          private_token:   '712763ab195a4192af9cf52841ba5788',
+          identifier:      'reveillon-2026-jardim',
+          name:            nome,
+          email:           email,
+          mobile_phone:    phone,
+          tags:            ['Reveillon2026']
+        })
+      })
+      .finally(function() {
+        window.location.href = 'https://promo.jardimmonteverde.com.br/obrigado-reveillon-2026';
+      });
+    });
+  }
+
+})();
+</script>
+
+</body>
+</html>
