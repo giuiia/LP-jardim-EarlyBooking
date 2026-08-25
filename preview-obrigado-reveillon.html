@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preview — Obrigado Réveillon</title>
+<style>/* ── Pousada Jardim Monte Verde — Página de Obrigado — Réveillon 2026/2027 ── */
+/* Cole no campo CSS da Edição Avançada do RD Station */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@0,400;0,600;0,700&family=Montserrat:wght@600;700&display=swap');
+
+@font-face {
+  font-family: 'Bethia';
+  src: url('https://giuiia.github.io/LP-jardim-EarlyBooking/bethia/Bethia.otf') format('opentype'),
+       url('https://giuiia.github.io/LP-jardim-EarlyBooking/bethia/Bethia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Ocultar conteúdo padrão do RD Station (sem esconder os wrappers da página) */
+body > *:not(:has(#jmv-obrigado)):not(script):not(style):not(link) {
+  display: none !important;
+}
+
+/* Neutralizar larguras/margens dos wrappers do RD e pintar o fundo verde */
+html, body { margin: 0 !important; padding: 0 !important; background: #0C2C28 !important; }
+.bricks--container, .bricks--page, .bricks--section, .bricks--row, .bricks--column,
+.rd-section, .rd-row, .rd-column {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  float: none !important;
+  background: transparent !important;
+}
+
+/* Reset local */
+#jmv-obrigado, #jmv-obrigado *, #jmv-obrigado *::before, #jmv-obrigado *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#jmv-obrigado {
+  --verde:     #0C2C28;
+  --terracota: #9A4B2A;
+  --ambar:     #D48D4A;
+  --creme:     #F1E4D3;
+  --branco:    #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  background: var(--verde);
+  color: var(--branco);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 24px;
+}
+
+#jmv-obrigado .obg-logo {
+  width: 140px;
+  display: block;
+  margin: 0 auto 40px;
+  filter: brightness(0) invert(1);
+}
+
+#jmv-obrigado .obg-check {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--ambar);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 32px;
+}
+#jmv-obrigado .obg-check svg { width: 36px; height: 36px; }
+
+#jmv-obrigado .obg-title {
+  font-family: 'Bethia', serif;
+  font-size: clamp(32px, 6vw, 52px);
+  font-weight: normal;
+  color: var(--ambar);
+  line-height: 1.1;
+  margin-bottom: 36px;
+}
+
+#jmv-obrigado .obg-subtitle {
+  font-size: 16px;
+  color: rgba(255,255,255,0.8);
+  max-width: 480px;
+  line-height: 1.7;
+  margin: 0 auto 40px;
+}
+
+#jmv-obrigado .obg-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--ambar);
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 18px 36px;
+  border-radius: 8px;
+  margin: 0 auto 20px;
+  transition: background 0.2s;
+}
+#jmv-obrigado .obg-cta:hover { background: #c07a3a; }
+#jmv-obrigado .obg-cta svg { width: 20px; height: 20px; fill: white; flex-shrink: 0; }
+
+#jmv-obrigado .obg-secondary {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--branco);
+  border: 1.5px solid rgba(255,255,255,0.35);
+  border-radius: 8px;
+  padding: 14px 28px;
+  margin: 0 auto 28px;
+  transition: border-color 0.2s, color 0.2s;
+}
+#jmv-obrigado .obg-secondary:hover { border-color: var(--ambar); color: var(--ambar); }
+
+#jmv-obrigado .obg-back {
+  font-size: 13px;
+  color: rgba(255,255,255,0.45);
+  text-decoration: none;
+  margin-top: 8px;
+  display: inline-block;
+}
+#jmv-obrigado .obg-back:hover { color: rgba(255,255,255,0.7); }
+</style>
+</head>
+<body>
+<div class="rd-wrapper-simulado"><div id="jmv-obrigado">
+
+  <img src="https://giuiia.github.io/LP-jardim-EarlyBooking/jardim_logo.png" alt="Pousada Jardim Monte Verde" class="obg-logo" />
+
+  <div class="obg-check">
+    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+  </div>
+
+  <h1 class="obg-title">Recebemos seu interesse!</h1>
+
+  <a class="obg-cta"
+     href="https://wa.me/5535998290901?text=Ol%C3%A1%21%20Preenchi%20o%20formul%C3%A1rio%20da%20LP%20de%20R%C3%A9veillon%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+     target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.524 5.843L.057 23.743a.5.5 0 0 0 .63.612l6.094-1.596A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.875 9.875 0 0 1-5.032-1.374l-.36-.214-3.733.978.996-3.636-.235-.374A9.868 9.868 0 0 1 2.106 12C2.106 6.533 6.533 2.106 12 2.106S21.894 6.533 21.894 12 17.467 21.894 12 21.894z"/>
+    </svg>
+    Fale com a nossa equipe
+  </a>
+
+  <a href="https://promo.jardimmonteverde.com.br/reveillon-2026#pacotes" class="obg-secondary">Ver os pacotes de Réveillon</a>
+
+  <a href="https://promo.jardimmonteverde.com.br/reveillon-2026" class="obg-back">← Voltar para a oferta</a>
+
+</div>
+</div>
+</body>
+</html>
